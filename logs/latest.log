@@ -1,12 +1,12 @@
-[21:23:43] [Datafixer Bootstrap #0/INFO]: 295 Datafixer optimizations took 266 milliseconds
-[21:23:45] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[21:23:45] [Render thread/INFO]: Setting user: Tioash
-[21:23:45] [Render thread/INFO]: Backend library: LWJGL version 3.4.1+2
-[21:23:45] [Render thread/INFO]: Preferring discrete GPU: AMD Radeon RX 7600 (RADV NAVI33)
-[21:23:45] [Render thread/INFO]: Using graphics backend OpenGL, using drivers: 4.6 (Core Profile) Mesa 26.0.8-1ubuntu0.3
-[21:23:45] [Render thread/INFO]: Using graphics device: AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 7.0.0-34-generic) (AMD)
-[21:23:45] [Render thread/INFO]: Using graphics device extensions: GL_ARB_multi_draw_indirect, GL_ARB_buffer_storage, GL_ARB_shader_draw_parameters, GL_ARB_base_instance, GL_KHR_debug, GL_ARB_draw_indirect, GL_ARB_clip_control, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
-[21:23:46] [Download-2/ERROR]: Failed to fetch user properties
+[18:38:06] [Datafixer Bootstrap #0/INFO]: 295 Datafixer optimizations took 247 milliseconds
+[18:38:08] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[18:38:08] [Render thread/INFO]: Setting user: Tioash
+[18:38:08] [Render thread/INFO]: Backend library: LWJGL version 3.4.1+2
+[18:38:08] [Render thread/INFO]: Preferring discrete GPU: AMD Radeon RX 7600 (RADV NAVI33)
+[18:38:08] [Render thread/INFO]: Using graphics backend OpenGL, using drivers: 4.6 (Core Profile) Mesa 26.0.8-1ubuntu0.3
+[18:38:08] [Render thread/INFO]: Using graphics device: AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 7.0.0-34-generic) (AMD)
+[18:38:08] [Render thread/INFO]: Using graphics device extensions: GL_ARB_multi_draw_indirect, GL_ARB_buffer_storage, GL_ARB_shader_draw_parameters, GL_ARB_base_instance, GL_KHR_debug, GL_ARB_draw_indirect, GL_ARB_clip_control, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[18:38:09] [Download-2/ERROR]: Failed to fetch user properties
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:70)
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:173)
@@ -22,12 +22,12 @@ Caused by: MinecraftClientHttpException[type=HTTP_ERROR, status=401, response=Er
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:65)
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:123)
 	... 5 more
-[21:23:46] [Render thread/INFO]: Reloading ResourceManager: vanilla
-[21:23:46] [Worker-Main-8/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
-[21:23:46] [Worker-Main-5/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
-[21:23:46] [Worker-Main-10/INFO]: Found unifont_pua-17.0.01.hex, loading
-[21:23:46] [Download-1/INFO]: Could not authorize you against Realms server: javax.ws.rs.BadRequestException: Invalid session
-[21:23:46] [Download-1/ERROR]: Failed to fetch Realms feature flags
+[18:38:09] [Render thread/INFO]: Reloading ResourceManager: vanilla
+[18:38:09] [Worker-Main-3/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[18:38:09] [Worker-Main-11/INFO]: Found unifont_pua-17.0.01.hex, loading
+[18:38:09] [Worker-Main-5/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[18:38:09] [Download-2/INFO]: Could not authorize you against Realms server: javax.ws.rs.BadRequestException: Invalid session
+[18:38:09] [Download-2/ERROR]: Failed to fetch Realms feature flags
 com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'javax.ws.rs.BadRequestException: Invalid session'
 	at com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:528)
 	at com.mojang.realmsclient.client.RealmsClient.fetchFeatureFlags(RealmsClient.java:187)
@@ -35,23 +35,23 @@ com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication 
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[21:23:47] [Render thread/INFO]: OpenAL initialized on device Ryzen HD Audio Controller Estéreo analógico
-[21:23:47] [Render thread/INFO]: Sound engine started
-[21:23:47] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[21:23:47] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[21:23:47] [Download-1/INFO]: Could not authorize you against Realms server: javax.ws.rs.BadRequestException: Invalid session
-[21:23:47] [Download-1/ERROR]: Couldn't connect to realms
+[18:38:10] [Render thread/INFO]: OpenAL initialized on device Ryzen HD Audio Controller Estéreo analógico
+[18:38:10] [Render thread/INFO]: Sound engine started
+[18:38:10] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[18:38:10] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[18:38:10] [Download-2/INFO]: Could not authorize you against Realms server: javax.ws.rs.BadRequestException: Invalid session
+[18:38:10] [Download-2/ERROR]: Couldn't connect to realms
 com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'javax.ws.rs.BadRequestException: Invalid session'
 	at com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:528)
 	at com.mojang.realmsclient.client.RealmsClient.clientCompatible(RealmsClient.java:308)
@@ -60,4 +60,52 @@ com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication 
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[21:28:24] [Render thread/INFO]: Stopping!
+[18:38:16] [Render thread/INFO]: Connecting to rawcraft.hidenplay.net, 25242
+[18:38:16] [Download-1/ERROR]: Failed to retrieve profile key pair
+MinecraftClientHttpException[type=HTTP_ERROR, status=401, response=ErrorResponse[path=/player/certificates, error=null, errorMessage=null, details=null]]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.buildHttpException(MinecraftClient.java:170)
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readServiceResponse(MinecraftClient.java:147)
+	at com.mojang.authlib.minecraft.client.MinecraftClient.post(MinecraftClient.java:89)
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.getKeyPair(YggdrasilUserApiService.java:62)
+	at net.minecraft.client.multiplayer.AccountProfileKeyPairManager.fetchProfileKeyPair(AccountProfileKeyPairManager.java:128)
+	at net.minecraft.client.multiplayer.AccountProfileKeyPairManager.lambda$readOrFetchProfileKeyPair$0(AccountProfileKeyPairManager.java:77)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[18:38:18] [Render thread/INFO]: [System] [CHAT] You have logged in successfully!
+[18:38:18] [Render thread/INFO]: [System] [CHAT] ----------------------------------------
+[18:38:18] [Render thread/INFO]: [System] [CHAT] ✔ Success! Your session has been restored!
+[18:38:18] [Render thread/INFO]: [System] [CHAT] ----------------------------------------
+[18:38:18] [Render thread/INFO]: [System] [CHAT] Welcome, Tioash!
+[18:38:18] [Render thread/INFO]: [System] [CHAT] Type /help for a list of commands.
+[18:38:18] [Render thread/INFO]: [System] [CHAT] Type /list to see who else is online.
+[18:38:18] [Render thread/INFO]: [System] [CHAT] Players online: 3 - World time: 5:59 PM
+[18:38:18] [Render thread/INFO]: [System] [CHAT] You have no new mail.
+[18:38:18] [Render thread/INFO]: [System] [CHAT] ➜ Tioash chegou ao servidor. Bem-vindo(a)!
+[18:38:18] [Render thread/INFO]: [System] [CHAT] ⚠ Some third-party launchers override SkinsRestorer skins. This includes TLauncher and SKLauncher. If you use one of these launchers, read the fix: https://skinsrestorer.net/docs/troubleshooting/launcher-issues [hide]
+[18:38:18] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[18:38:18] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[18:38:18] [Render thread/INFO]: Loaded 2 advancements
+[18:38:18] [Render thread/INFO]: [System] [CHAT] [ViaVersion] There is a newer plugin version available: 5.12.0, you're on: 5.11.0
+[18:38:18] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[18:38:18] [Render thread/INFO]: [System] [CHAT] You're 1 EssentialsX dev build(s) out of date!
+[18:38:18] [Render thread/INFO]: [System] [CHAT] Download it here: https://essentialsx.net/downloads.html
+[18:38:18] [Worker-Main-7/WARN]: Profile contained invalid signature for textures property (profile id: 00000000-0000-0000-0009-01f9a219844e)
+[18:38:18] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[18:38:18] [Render thread/WARN]: Received passengers for unknown entity
+[18:38:18] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[18:38:18] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[18:38:19] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[18:38:20] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[18:38:20] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[18:38:22] [Render thread/INFO]: [System] [CHAT] [lobby] Fundador*Lukabolado: e a do end com 20
+[18:38:26] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[18:38:27] [Render thread/INFO]: [System] [CHAT] [lobby] Donodev_theus: on ne mas aí tu é doido
+[18:38:31] [Render thread/INFO]: [System] [CHAT] « Raw-Core »Limpeza automática: 80 Itens removidos do chão.
+[18:38:42] [Render thread/INFO]: Loaded 5 advancements
+[18:38:43] [Render thread/INFO]: [System] [CHAT] [lobby] Donodev_theus: quando tiver 10 on é o nether e o end com 15
+[18:38:48] [Render thread/INFO]: [System] [CHAT] [lobby] Fundador*Lukabolado: pode ser
+[18:39:57] [Render thread/INFO]: [System] [CHAT] ➜ *Lukabolado saiu do servidor. Até a próxima!
+[18:41:19] [Render thread/WARN]: Client disconnected with reason: Timed out
+[18:42:23] [Render thread/INFO]: Stopping!
